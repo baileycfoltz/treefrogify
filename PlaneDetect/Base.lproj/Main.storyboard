@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ArchitectsDaughter-Regular.ttf">
+            <string>ArchitectsDaughter-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="View" customClass="ViewController" customModule="Tree_Frogify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="er8-cT-ect">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jKt-Ip-5ey">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frogd3.png" translatesAutoresizingMaskIntoConstraints="NO" id="DWP-xm-aDM" userLabel="f3desc">
+                                <rect key="frame" x="28" y="41" width="370" height="370"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frogd2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kcc-wx-5Yv" userLabel="f2desc">
+                                <rect key="frame" x="28" y="41" width="370" height="370"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frogd1.png" translatesAutoresizingMaskIntoConstraints="NO" id="T81-GX-jfn" userLabel="f1desc">
+                                <rect key="frame" x="28" y="41" width="370" height="370"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap a Button to Place a Frog!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLd-ey-wQr">
+                                <rect key="frame" x="55" y="800" width="311" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArchitectsDaughter-Regular" family="Architects Daughter" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGD-o5-7WS">
+                                <rect key="frame" x="68" y="68" width="278.5" height="32"/>
+                                <attributedString key="attributedText">
+                                    <fragment content=" Tap a Frog to See More">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="23" name="ArchitectsDaughter-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVY-EA-pSS">
+                                <rect key="frame" x="156" y="681" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="frog2"/>
+                                <connections>
+                                    <action selector="didTapfrog2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FdU-lr-1Ry"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzg-In-QGC">
+                                <rect key="frame" x="293" y="681" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="frog3"/>
+                                <connections>
+                                    <action selector="didTapfrog3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a0F-wx-Wi6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYb-uZ-uA7" userLabel="Frogbutton1">
+                                <rect key="frame" x="20" y="681" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="frog1"/>
+                                <connections>
+                                    <action selector="didTapfro1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kSL-pm-dCg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Svm-Kn-Ym1"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gGD-o5-7WS" firstAttribute="centerX" secondItem="er8-cT-ect" secondAttribute="centerX" id="H3m-HL-KAL"/>
+                            <constraint firstItem="gGD-o5-7WS" firstAttribute="top" secondItem="Svm-Kn-Ym1" secondAttribute="top" constant="20" id="O1A-C1-BAb"/>
+                            <constraint firstItem="jKt-Ip-5ey" firstAttribute="top" secondItem="er8-cT-ect" secondAttribute="top" id="XDO-0O-VGD"/>
+                            <constraint firstItem="jKt-Ip-5ey" firstAttribute="bottom" secondItem="er8-cT-ect" secondAttribute="bottom" id="gFe-eE-pnA"/>
+                            <constraint firstItem="jKt-Ip-5ey" firstAttribute="leading" secondItem="er8-cT-ect" secondAttribute="leading" id="hd0-uc-0ZP"/>
+                            <constraint firstItem="jKt-Ip-5ey" firstAttribute="trailing" secondItem="er8-cT-ect" secondAttribute="trailing" id="rqj-lA-Ir2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Label2" destination="aLd-ey-wQr" id="CMU-12-wNY"/>
+                        <outlet property="OneDesc" destination="T81-GX-jfn" id="aLm-P2-KS7"/>
+                        <outlet property="ThreeDesc" destination="DWP-xm-aDM" id="Quw-Vu-iPT"/>
+                        <outlet property="TwoDesc" destination="Kcc-wx-5Yv" id="sOl-zg-ygJ"/>
+                        <outlet property="frogbuton1" destination="YYb-uZ-uA7" id="qcF-UN-eCp"/>
+                        <outlet property="frogbutton2" destination="gVY-EA-pSS" id="iAD-7N-1f9"/>
+                        <outlet property="frogbutton3" destination="dzg-In-QGC" id="6kD-5Z-CPu"/>
+                        <outlet property="myARView" destination="jKt-Ip-5ey" id="hcB-eJ-gNw"/>
+                        <outlet property="myLabel" destination="gGD-o5-7WS" id="qRL-EZ-xgd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="frog1" width="1170" height="1170"/>
+        <image name="frog2" width="1170" height="1170"/>
+        <image name="frog3" width="1170" height="1170"/>
+        <image name="frogd1.png" width="390" height="390"/>
+        <image name="frogd2.png" width="390" height="390"/>
+        <image name="frogd3.png" width="390" height="390"/>
+    </resources>
+</document>
